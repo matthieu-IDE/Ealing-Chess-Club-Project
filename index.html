@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/6475042018.js" crossorigin="anonymous"></script>
+    <title>Ealing Chess Club</title>
+</head>
+
+<body>
+    <div id="loader" class="se-pre-con">
+    </div>
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <header>
+        <nav>
+            <article href="http://127.0.0.1:5500" class="logo">
+                <img src="images/Logo 500x500 px (1).png" alt="Hillingdon and Ealing Schools Chess Association logo"
+                    height="100px" width="80px" />
+            </article>
+            <ul>
+                <li><a href="http://127.0.0.1:5500" class="nav_hover">Home</a></li>
+                <li><a href="about-us.html" class="nav_hover">About us</a></li>
+                <li><a href="juniors.html" class="nav_hover">Juniors</a></li>
+                <li><a href="training.html" class="nav_hover">Training</a></li>
+                <li><a href="/events.html" class="nav_hover">Events</a></li>
+            </ul>
+            <a href="#contact-section" class="contact_btn">Contact Us</a>
+        </nav>
+        <header>
+            <main>
+
+                <section class="hero_content">
+                    <h1>Hillingdon & Ealing Schools</h1>
+                    <h1>Chess Association (HECA)</h1>
+                </section>
+            </main>
+            <div class="contof">
+                <a href="login.html" class="buon" id="buon">Login</a>
+            </div>
+            <!-- <div class="popup">
+                <div class="popup-content">
+                    <form method="post">
+                        <i class="fa-solid fa-user fa-4x"></i>
+                        <img src="images/close icon.png" class="close" alt="Close button">
+                        <label for="name">Name</label>
+                        <input autocomplete="off" id="name" name="name" type="text" placeholder="Username" required>
+                        <label for="password">Password</label>
+                        <input autocomplete="off" id="password" name="password" type="password" placeholder="Password"
+                            required>
+                        <span>
+                            <i class="fa fa-eye" id="eye" onclick="toggle()">
+                            </i>
+                        </span>
+
+                        <p id="results"></p>
+                        <button class="butn">Login</button>
+                    </form>
+                </div>
+            </div> -->
+            <div class="news">
+                <h2> News</h3>
+            </div>
+            <br><br><br><br><br><br>
+            <div id="contact-section"  class="contact-section" data-aos="zoom-in">
+                <h1>Contact Us</h1>
+                <div class="border"></div>
+                <form action="https://formsubmit.co/hecachess@gmail.com" method="POST" class="contact-form">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input name="Name" type="text" class="contact-form-text" placeholder="Your Name" required>
+                    <input name="Email" type="email" class="contact-form-text" placeholder="Your Email" required>
+                    <input name="Phone&nbsp;Number" type="text" class="contact-form-text" placeholder="Your phone">
+                    <textarea name="Their&nbsp;message" class="contact-form-text" placeholder="Your message"
+                        required></textarea>
+
+                    <button type="submit" class="contact-form-btn" data-error-message="Error!"
+                        data-sending-message="Sending..." value="Send"
+                        data-ok-message="Message Sent">&nbsp;&nbsp;&nbsp;<i
+                            class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Send Message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </button>
+                </form>
+            </div>
+            <div data-aos="flip-up" class="contact-info">
+                <div class="card">
+                    <i class="card-icon far fa-envelope"></i>
+                    <p>email@address.com</p>
+                </div>
+
+                <div class="card">
+                    <i class="card-icon fas fa-phone"></i>
+                    <p>+44 7834 367109</p>
+                </div>
+
+                <div class="card">
+                    <i class="card-icon fas fa-map-marker-alt"></i>
+                    <p>Hillingdon & Ealing, London</p>
+                </div>
+            </div>
+
+            <footer  data-aos="fade-down" class="footer-distributed">
+
+                <div class="footer-left">
+                    <img src="images/Logo 500x500 px (1).png" width="130px" height="130px"
+                        alt="Hillingdon & Ealing Schools Chess Association (HECA)  Logo">
+                    <div class="yo">
+                        <p class="footer-links">
+                            <a class="link-1" href="index.html">Home</a>
+
+                            <a href="/about-us.html">About us</a>
+
+                            <a href="/juniors.html">Juniors</a>
+
+                            <a href="/training.html">Training</a>
+
+                            <a href="/events.html">Events</a>
+                        </p>
+
+                        <p>Hillingdon & Ealing Schools Chess Association (HECA) &nbsp; &copy; 2023 <br> <br> Created by
+                            Matthieu Fulhaber</p>
+                    </div>
+                </div>
+            </footer>      
+              <style>
+                #cookie-banner {
+                  position: fixed;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  background-color: #333;
+                  color: #fff;
+                  padding: 20px;
+                  text-align: center;
+                }
+                #accept-cookies-button {
+                  background-color: #4caf50;
+                  border: none;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                }
+              </style>
+              
+              <script>
+                const acceptCookiesButton = document.getElementById('accept-cookies-button');
+                const cookieBanner = document.getElementById('cookie-banner');
+              
+                acceptCookiesButton.addEventListener('click', () => {
+                  // set a cookie to indicate that the user has accepted the cookies
+                  document.cookie = "acceptedCookies=true";
+                  // hide the banner
+                  cookieBanner.style.display = 'none';
+                });
+              
+                // check if the user has accepted the cookies
+                const acceptedCookies = document.cookie.includes('acceptedCookies=true');
+                if (!acceptedCookies) {
+                  // show the banner if the user has not accepted the cookies
+                  cookieBanner.style.display = 'block';
+                }
+              </script>
+            <script src="main.js"></script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1000,
+                    once: true,
+                });
+            </script>
+            <script>
+                $(window).scroll(function () {
+                    $("main hero_content h1").css("opacity", 1 - $(window).scrollTop() / 250);
+                })
+            </script>
+            <script>
+                var buon = document.getElementById("buon")
+                buon.onclick = function () {
+                    document.querySelector(".popup").style.display = "flex";
+                }
+                document.querySelector(".close").addEventListener("click", function () {
+                    document.querySelector(".popup").style.display = "none";
+                })
+                function myfunction() {
+
+                }
+                var objPeople = [
+                    {
+                        username: "superadmin",
+                        password: "superadmin"
+                    },
+                    {
+                        username: "abc",
+                        password: "abc"
+                    }
+                ]
+                //     for (var i = 0; i < objPeople.length; i++) {
+                //         if (username == objPeople[i].username && password == objPeople[i].password) {
+                //             result.innerHTML = "SUCCESS"
+                //         }
+                //     }
+                //     result.innerHTML = "Incorect username or password"
+                // }
+                var state = false;
+                function toggle() {
+                    if (state) {
+                        document.getElementById("password").setAttribute("type", "password");
+                        document.getElementById("eye").style.color = '#09080a';
+                        state = false;
+                    }
+                    else {
+                        document.getElementById("password").setAttribute("type", "text");
+                        document.getElementById("eye").style.color = '#09080a';
+                        state = true;
+                    }
+                }
+
+            </script>
+            <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $("#loader").fadeOut(1200);
+                });
+            </script>
+</body>
+
+</html>
