@@ -1,0 +1,4 @@
+Default GoDaddy DNS Servers
+
+ns33.domaincontrol.com
+ns34.domaincontrol.com

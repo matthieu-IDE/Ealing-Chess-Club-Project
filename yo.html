@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style33.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containerx">
+        <div class="column">
+          <div class="post-card">
+            <div class="post-img">
+              <div class="date">
+                <div class="day">15</div>
+                <div class="month">Aug</div>
+              </div>
+              <img src="https://images.unsplash.com/photo-1467307983825-619715426c70?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=fae278c7b8eeffec370bda6e42f5a827" />
+            </div>
+            <div class="post-content">
+              <div class="category">Photos</div>
+              <h1 class="title">India</h1>
+              <h2 class="sub_title">An upcoming superpower</h2>
+              <p class="description">India is a vast South Asian country with diverse terrain – from Himalayan peaks to Indian Ocean coastline – and history reaching back 5 millennia.</p>
+              <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-o"></i> Posted on: 13/01/2023</span><span class="comments"><i class="fa fa-comments"></i></span></div>
+            </div>
+          </div>         
+        </div>
+      <script>
+        $(window).load(function() {
+  $('.post-card').hover(function() {
+    $(this).find('.description').stop().animate({
+      height: "toggle",
+      opacity: "toggle"
+    }, 300);
+  });
+});
+      </script>
+</body>
+</html>
