@@ -739,3 +739,87 @@ textarea.contact-form-text {
  text-align: right;
 }
 
+.chess
+			{
+				display: inline-block;
+				margin: 1px;
+			}
+
+			body
+			{
+				background-color: #555;
+			}
+.board{
+  display: flex;
+  justify-content: center;
+}
+		.black
+		{
+			background-color: black;
+			height: 80px;
+			width:80px;
+			margin-top: 5px;
+			animation-name: example;
+			animation:example 1s infinite linear;
+		  animation-duration: 2s
+		}
+		.white
+		{
+			background-color: white;
+			height: 80px;
+			width:80px;
+			padding: 1px;
+			margin-top: 5px;
+			animation-name: example2;
+			animation:example2 1s infinite linear;
+		  animation-duration: 2s;
+		}
+
+			@keyframes example 
+			{
+				   from {
+						transform: rotate(0deg);
+					}
+					to {
+							transform: rotate(359deg);
+					}
+			}
+
+			@keyframes example2 
+			{
+				  from {
+						transform: rotate(360deg);
+					}
+					to {
+							transform: rotate(0deg);
+					}
+
+				}
+
+        h2 {
+          margin: 60px 0 30px 0;
+          text-align: center;
+        }
+        .underit h3 {
+          color: #000;
+          font-size: 180%;
+          background-color: #fff;
+          display: inline-block;
+          margin: 120px 0 0 0;
+          padding: 10px;
+          text-align: center;
+          
+        }
+        .underit{
+          margin-left: -32%;
+          margin-top: -40px;
+        }
+        .underit p {
+          color: #333;
+          font-size: 140%;
+          background-color: #fff;
+          display: inline-block;
+          margin: 4px 0 0 0;
+          padding: 8px;
+          margin-left: 60px;
+        }
